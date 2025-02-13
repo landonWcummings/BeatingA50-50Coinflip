@@ -7,12 +7,12 @@ from numba.cuda.random import create_xoroshiro128p_states, xoroshiro128p_uniform
 # ============================
 # Simulation Parameters
 # ============================
-NUM_INSTANCES    = 100000          # number of independent simulations
+NUM_INSTANCES    = 200000          # number of independent simulations
 TARGET_CAPITAL   = 800_000.0      # stop if account >= this value
 STARTING_CAPITAL = 1_000.0        # starting capital per simulation
-BASE_BET         = 0.00001        # initial bet
+BASE_BET         = 0.1        # initial bet
 BATCH_SIZE       = 1000           # simulate 1000 bets per kernel launch
-SIM_TIME         = 70000.0        # overall simulation time in seconds
+SIM_TIME         = 60.0        # overall simulation time in seconds
 
 # ============================
 # CUDA Kernel
